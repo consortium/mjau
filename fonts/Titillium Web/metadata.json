@@ -5,100 +5,111 @@
                         "basename": "titillium-thin-webfont",
                         "formats" : [
                                 "woff",
-				"eot"
+				"eot",
+                                "ttf"
                         ],
                         "style": "normal",
+                        "weight": 200
+                },
+                {
+                        "basename": "titillium-thinitalic-webfont",
+                        "formats" : [
+                                "woff",
+                                "eot",
+                                "ttf"
+                        ],
+                        "style": "italic",
                         "weight": 200
                 },
                 {
                         "basename": "titillium-light-webfont",
                         "formats" : [
                                 "woff",
-                                "eot"
+                                "eot",
+                                "ttf"
                         ],
                         "style": "normal",
+                        "weight": 300
+                },
+                {
+                        "basename": "titillium-lightitalic-webfont",
+                        "formats" : [
+                                "woff",
+                                "eot",
+                                "ttf"
+                        ],
+                        "style": "italic",
                         "weight": 300
                 },
                 {
                         "basename": "titillium-regular-webfont",
                         "formats" : [
                                 "woff",
-                                "eot"
+                                "eot",
+                                "ttf"
                         ],
                         "style": "normal",
+                        "weight": 400
+                },
+                {
+                        "basename": "titillium-regularitalic-webfont",
+                        "formats" : [
+                                "woff",
+                                "eot",
+                                "ttf"
+                        ],
+                        "style": "italic",
                         "weight": 400
                 },
                 {
                         "basename": "titillium-semibold-webfont",
                         "formats" : [
                                 "woff",
-                                "eot"
+                                "eot",
+                                "ttf"
                         ],
                         "style": "normal",
+                        "weight": 600
+                },
+                {
+                        "basename": "titillium-semibolditalic-webfont",
+                        "formats" : [
+                                "woff",
+                                "eot",
+                                "ttf"
+                        ],
+                        "style": "italic",
                         "weight": 600
                 },
                 {
                         "basename": "titillium-bold-webfont",
                         "formats" : [
                                 "woff",
-                                "eot"
+                                "eot",
+                                "ttf"
                         ],
                         "style": "normal",
+                        "weight": 700
+                },
+                {
+                        "basename": "titillium-bolditalic-webfont",
+                        "formats" : [
+                                "woff",
+                                "eot",
+                                "ttf"
+                        ],
+                        "style": "italic",
                         "weight": 700
                 },
                 {
                         "basename": "titillium-black-webfont",
                         "formats" : [
                                 "woff",
-                                "eot"
+                                "eot",
+                                "ttf"
                         ],
                         "style": "normal",
                         "weight": 900
-                },
-                {
-                        "basename": "titillium-thinitalic-webfont",
-                        "formats" : [
-                                "woff",
-                                "eot"
-                        ],
-                        "style": "italic",
-                        "weight": 200
-                },
-                {
-                        "basename": "titillium-lightitalic-webfont",
-                        "formats" : [
-                                "woff",
-                                "eot"
-                        ],
-                        "style": "italic",
-                        "weight": 300
-                },
-                {
-                        "basename": "titillium-regularitalic-webfont",
-                        "formats" : [
-                                "woff",
-                                "eot"
-                        ],
-                        "style": "italic",
-                        "weight": 400
-                },
-                {
-                        "basename": "titillium-semibolditalic-webfont",
-                        "formats" : [
-                                "woff",
-                                "eot"
-                        ],
-                        "style": "italic",
-                        "weight": 600
-                },
-                {
-                        "basename": "titillium-bolditalic-webfont",
-                        "formats" : [
-                                "woff",
-                                "eot"
-                        ],
-                        "style": "italic",
-                        "weight": 700
                 }
         ]
 }

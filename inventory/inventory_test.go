@@ -8,8 +8,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/noll/mjau/font"
-	"github.com/noll/mjau/test"
+	"github.com/hybrid-publishing-lab/mjau/font"
+	"github.com/hybrid-publishing-lab/mjau/test"
 )
 
 var (

@@ -12,10 +12,11 @@ import (
 	"path/filepath"
 	"text/template"
 
-	ihttp "github.com/noll/mjau/http" // Internal http package.
-	"github.com/noll/mjau/inventory"
-	"github.com/noll/mjau/util"
-	"github.com/noll/mjau/whitelist"
+	ihttp "github.com/hybrid-publishing-lab/mjau/http" // Internal http package.
+	"github.com/hybrid-publishing-lab/mjau/inventory"
+	"github.com/hybrid-publishing-lab/mjau/util"
+	"github.com/hybrid-publishing-lab/mjau/whitelist"
+	//"github.com/SlyMarbo/spdy"
 )
 
 const (
@@ -35,6 +36,8 @@ var (
 	wFlag = flag.String("w", "whitelist.json", "path to whitelist file")
 )
 
+type Error string
+
 func init() {
 	util.BlankStrFlagDefault(bFlag, "b")
 	util.BlankStrFlagDefault(lFlag, "l")
@@ -42,6 +45,22 @@ func init() {
 	util.BlankStrFlagDefault(wFlag, "w")
 	*lFlag = filepath.FromSlash(*lFlag)
 	*wFlag = filepath.FromSlash(*wFlag)
+}
+
+// Error reports a generic error.
+func (e Error) Error() string {
+	return ProgName + ": " + string(e)
+}
+
+// PrintErrorExit prints the given error message to standard error
+// and exits the program signaling abnormal termination.
+func PrintErrorExit(message string) {
+	fmt.Fprintln(os.Stderr, Error(message))
+	os.Exit(1)
+}
+
+func handler(w http.ResponseWriter, r *http.Request) {
+    fmt.Fprintf(w, "Hi there, I love %s!", r.URL.Path[1:])
 }
 
 func main() {
@@ -70,9 +89,11 @@ func main() {
 	templatesPath := filepath.FromSlash(*tFlag)
 	eot := filepath.Join(templatesPath, "eot.css.tmpl")
 	woff := filepath.Join(templatesPath, "woff.css.tmpl")
+	ttf := filepath.Join(templatesPath, "ttf.css.tmpl")
+	odt := filepath.Join(templatesPath, "odt.css.tmpl")
 	var templates *template.Template
 	var err error
-	if templates, err = template.ParseFiles(eot, woff); err != nil {
+	if templates, err = template.ParseFiles(eot, woff, ttf, odt); err != nil {
 		PrintErrorExit(err.Error())
 	}
 	// Create CSS handler function.
@@ -94,10 +115,12 @@ func main() {
 		// Enable response gzip compression.
 		cssHandler = ihttp.MakeGzipHandler(cssHandler)
 	}
+
 	// Register CSS HTTP handler.
+	http.Handle("/", http.StripPrefix("/", http.FileServer(http.Dir(*lFlag))))
 	http.HandleFunc("/css/", cssHandler)
 	// Start HTTP server.
-	if err := http.ListenAndServe(*bFlag, nil); err != nil {
+	if err := http.ListenAndServeTLS(*bFlag, "cert.pem", "key.pem", nil); err != nil {
 		PrintErrorExit(err.Error())
 	}
 }

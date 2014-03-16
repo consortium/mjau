@@ -16,11 +16,11 @@ import (
 	"testing"
 	"text/template"
 
-	"github.com/noll/mjau/font"
-	"github.com/noll/mjau/inventory"
-	"github.com/noll/mjau/test"
-	"github.com/noll/mjau/util"
-	"github.com/noll/mjau/whitelist"
+	"github.com/hybrid-publishing-lab/mjau/font"
+	"github.com/hybrid-publishing-lab/mjau/inventory"
+	"github.com/hybrid-publishing-lab/mjau/test"
+	"github.com/hybrid-publishing-lab/mjau/util"
+	"github.com/hybrid-publishing-lab/mjau/whitelist"
 )
 
 var (

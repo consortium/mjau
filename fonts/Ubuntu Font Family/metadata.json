@@ -1,0 +1,109 @@
+{
+	"family": "Ubuntu",
+	"subfamilies": [
+		{
+			"basename": "Ubuntu-L",
+			"formats" : [
+				"ttf"
+			],
+			"style": "normal",
+			"weight": 300
+		},
+		{
+			"basename": "Ubuntu-LI",
+			"formats" : [
+				"ttf"
+			],
+			"style": "italic",
+			"weight": 300
+		},
+		{
+			"basename": "Ubuntu-R",
+			"formats" : [
+				"ttf"
+			],
+			"style": "normal",
+			"weight": 400
+		},
+		{
+			"basename": "Ubuntu-RI",
+			"formats" : [
+				"ttf"
+			],
+			"style": "italic",
+			"weight": 400
+		},
+		{
+			"basename": "Ubuntu-M",
+			"formats" : [
+				"ttf"
+			],
+			"style": "normal",
+			"weight": 500
+		},
+		{
+			"basename": "Ubuntu-MI",
+			"formats" : [
+				"ttf"
+			],
+			"style": "italic",
+			"weight": 500
+		},
+		{
+			"basename": "Ubuntu-B",
+			"formats" : [
+				"ttf"
+			],
+			"style": "normal",
+			"weight": 700
+		},
+		{
+			"basename": "Ubuntu-BI",
+			"formats" : [
+				"ttf"
+			],
+			"style": "italic",
+			"weight": 700
+		},
+		{
+			"basename": "UbuntuMono-R",
+			"formats" : [
+				"ttf"
+			],
+			"style": "normal",
+			"weight": 400
+		},
+		{
+			"basename": "UbuntuMono-RI",
+			"formats" : [
+				"ttf"
+			],
+			"style": "italic",
+			"weight": 400
+		},
+		{
+			"basename": "UbuntuMono-B",
+			"formats" : [
+				"ttf"
+			],
+			"style": "normal",
+			"weight": 700
+		},
+		{
+			"basename": "UbuntuMono-BI",
+			"formats" : [
+				"ttf"
+			],
+			"style": "italic",
+			"weight": 700
+		},
+		{
+			"basename": "Ubuntu-C",
+			"formats" : [
+				"ttf"
+			],
+			"style": "normal",
+			"weight": 400
+		}
+	]
+}

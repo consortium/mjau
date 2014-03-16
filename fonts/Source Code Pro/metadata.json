@@ -1,0 +1,68 @@
+{
+	"family": "Source Code Pro",
+	"subfamilies": [
+		{
+			"basename": "SourceCodePro-ExtraLight",
+			"formats" : [
+				"eot",
+				"woff"
+			],
+			"style": "normal",
+			"weight": 200
+		},
+		{
+			"basename": "SourceCodePro-Light",
+			"formats" : [
+				"eot",
+				"woff"
+			],
+			"style": "normal",
+			"weight": 300
+		},
+		{
+			"basename": "SourceCodePro-Regular",
+			"formats" : [
+				"eot",
+				"woff"
+			],
+			"style": "normal",
+			"weight": 400
+		},
+		{
+			"basename": "SourceCodePro-Medium",
+			"formats" : [
+				"eot",
+				"woff"
+			],
+			"style": "normal",
+			"weight": 500
+		},
+		{
+			"basename": "SourceCodePro-Semibold",
+			"formats" : [
+				"eot",
+				"woff"
+			],
+			"style": "normal",
+			"weight": 600
+		},
+		{
+			"basename": "SourceCodePro-Bold",
+			"formats" : [
+				"eot",
+				"woff"
+			],
+			"style": "normal",
+			"weight": 700
+		},
+		{
+			"basename": "SourceCodePro-Black",
+			"formats" : [
+				"eot",
+				"woff"
+			],
+			"style": "normal",
+			"weight": 900
+		}
+	]
+}

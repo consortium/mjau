@@ -12,7 +12,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/noll/mjau/util"
+	"github.com/hybrid-publishing-lab/mjau/util"
 )
 
 const (
@@ -20,6 +20,8 @@ const (
 	// Supported font file formats.
 	EOT
 	WOFF
+	TTF
+	ODT
 )
 
 // Font represents a single font file.
@@ -66,6 +68,11 @@ func (f *Font) MimeType() string {
 		return "application/vnd.ms-fontobject"
 	case WOFF:
 		return "application/x-font-woff"
+	case TTF:
+		return  "application/octet-stream"
+	case ODT:
+		return  "application/octet-stream"
+
 	}
 	// Should not happen.
 	return ""
@@ -96,6 +103,10 @@ func (f *Format) FromString(format string) {
 		*f = EOT
 	case "woff":
 		*f = WOFF
+	case "ttf":
+		*f = TTF
+	case "odt":
+		*f = ODT
 	}
 }
 
@@ -107,6 +118,10 @@ func (f *Format) String() string {
 		return "eot"
 	case WOFF:
 		return "woff"
+	case TTF:
+		return "ttf"
+	case ODT:
+		return "odt"
 	}
 	return ""
 }

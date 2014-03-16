@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/noll/mjau/util"
+	"github.com/hybrid-publishing-lab/mjau/util"
 )
 
 // Whitelist is the representation of a JSON-encoded whitelist file.

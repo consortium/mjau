@@ -11,10 +11,10 @@ import (
 	"path/filepath"
 	"strconv"
 
-	"github.com/noll/mjau/font"
-	"github.com/noll/mjau/util"
+	"github.com/hybrid-publishing-lab/mjau/font"
+	"github.com/hybrid-publishing-lab/mjau/util"
 
-	"github.com/noll/samling/table"
+	"github.com/hybrid-publishing-lab/samling/table"
 )
 
 // Inventory represents a table for storing fonts.

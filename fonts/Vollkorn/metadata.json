@@ -1,0 +1,59 @@
+{
+	"family": "Vollkorn",
+	"subfamilies": [
+		{
+			"basename": "vollkorn-regular-webfont",
+			"formats" : [
+				"woff",
+				"eot"
+			],
+			"style": "normal",
+			"weight": 400 
+		},
+		{
+			"basename": "vollkorn-italic-webfont",
+			"formats" : [
+				"woff",
+				"eot"
+			],
+			"style": "italic",
+			"weight": 400 
+		},
+		{
+			"basename": "vollkorn-medium-webfont",
+			"formats" : [
+				"woff",
+				"eot"
+			],
+			"style": "normal",
+			"weight": 500 
+		},
+		{
+			"basename": "vollkorn-mediumitalic-webfont",
+			"formats" : [
+				"woff",
+				"eot"
+			],
+			"style": "italic",
+			"weight": 500 
+		},
+		{
+			"basename": "vollkorn-semibold-webfont",
+			"formats" : [
+				"woff",
+				"eot"
+			],
+			"style": "normal",
+			"weight": 600 
+		},
+		{
+			"basename": "vollkorn-semibolditalic-webfont",
+			"formats" : [
+				"woff",
+				"eot"
+			],
+			"style": "italic",
+			"weight": 600 
+		}
+	]
+}

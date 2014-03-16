@@ -13,7 +13,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/noll/mjau/test"
+	"github.com/hybrid-publishing-lab/mjau/test"
 )
 
 func TestMakeGzipHandler(t *testing.T) {

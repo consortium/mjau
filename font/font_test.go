@@ -11,7 +11,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/noll/mjau/test"
+	"github.com/hybrid-publishing-lab/mjau/test"
 )
 
 var (
