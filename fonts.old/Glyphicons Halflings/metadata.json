@@ -1,0 +1,16 @@
+
+{
+	"family": "Glyphicons Halflings",
+	"subfamilies": [
+		{
+			"basename": "normal",
+			"formats" : [
+				"eot",
+				"woff",
+				"ttf"
+			],
+			"style": "normal",
+			"weight": 300
+		}
+	]
+}
